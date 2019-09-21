@@ -3,4 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="enter_title">Enter title</string>
     <string name="enter_description">Enter description</string>
+    <string name="new_notification_title">Create new notification</string>
+    <string name="create">Create</string>
+    <string name="empty_notification_alert">You aren\'t create any title or description</string>
+    <string name="cancel">Cancel</string>
 </resources>

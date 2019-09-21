@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +37,17 @@ public class MainFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         adapter.setItems(getTestItems());
+
+        FloatingActionButton fab = view.findViewById(R.id.floating_button);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity activity = (MainActivity) getActivity();
+                if (activity == null) return;
+
+                new NewNotificationDialog().show(activity.getSupportFragmentManager(), NewNotificationDialog.class.getName());
+            }
+        });
     }
 
     private ArrayList<Item> getTestItems() {
