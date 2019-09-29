@@ -45,7 +45,7 @@ public class MainFragment extends Fragment {
                 MainActivity activity = (MainActivity) getActivity();
                 if (activity == null) return;
 
-                new NewNotificationDialog().show(activity.getSupportFragmentManager(), NewNotificationDialog.class.getName());
+                activity.pushFragment(new NewNotificationFragment());
             }
         });
     }
@@ -110,6 +110,8 @@ public class MainFragment extends Fragment {
             return items.size();
         }
     }
+
+
 
     class Item {
         private String title, description;

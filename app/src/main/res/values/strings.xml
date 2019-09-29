@@ -7,4 +7,8 @@
     <string name="create">Create</string>
     <string name="empty_notification_alert">You aren\'t create any title or description</string>
     <string name="cancel">Cancel</string>
+    <string name="date_picker_title">Pick Date</string>
+    <string name="time_picker_title">Pick Time</string>
+    <string name="notification_time">Notification time:</string>
+    <string name="accept">Accept</string>
 </resources>
